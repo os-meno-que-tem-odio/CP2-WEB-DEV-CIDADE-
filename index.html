@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CP2WEB — Home</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">CP2WEB</div>
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="#portfolio">PORTIFÓLIO</a>
+        <a href="quiz.html">QUIZ</a>
+        <a href="#contato">CONTATO</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Conhecimento em modo futurista</h1>
+        <p>Site com slideshow, cards, formulário e QUIZ em JavaScript via alert/prompt.</p>
+        <div class="theme-switcher">
+          <button class="btn" data-theme="neo" onclick="trocar('#2323FF')">Cyan</button>
+          <button class="btn" data-theme="plasma" onclick="trocar('#722f37')">Burgundy</button>
+          <button class="btn" data-theme="holo" onclick="trocar('#4169E1')">Lightblue</button>
+        </div>
+      </div>
+      <div class="slideshow" aria-label="SlideShow com 5 imagens">
+        <div class="slide"><img src="https://picsum.photos/id/1015/1200/600" alt="Slide"></div><div class="slide"><img src="https://picsum.photos/id/1025/1200/600" alt="Slide"></div><div class="slide"><img src="https://picsum.photos/id/1035/1200/600" alt="Slide"></div><div class="slide"><img src="https://picsum.photos/id/1043/1200/600" alt="Slide"></div><div class="slide"><img src="https://picsum.photos/id/1050/1200/600" alt="Slide"></div>
+        <button class="slide-btn prev" aria-label="Anterior">‹</button>
+        <button class="slide-btn next" aria-label="Próximo">›</button>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfólio</h2>
+      <div class="cards">
+        <article class="card"><div class="card-media"><img src="https://picsum.photos/id/1060/800/600" alt="Produto"></div><div class="card-body"><h3>Produto</h3><p>Descrição breve.</p><div class="price">R$ 99,00</div></div></article><article class="card"><div class="card-media"><img src="https://picsum.photos/id/1070/800/600" alt="Produto"></div><div class="card-body"><h3>Produto</h3><p>Descrição breve.</p><div class="price">R$ 99,00</div></div></article><article class="card"><div class="card-media"><img src="https://picsum.photos/id/1080/800/600" alt="Produto"></div><div class="card-body"><h3>Produto</h3><p>Descrição breve.</p><div class="price">R$ 99,00</div></div></article><article class="card"><div class="card-media"><img src="https://picsum.photos/id/109/800/600" alt="Produto"></div><div class="card-body"><h3>Produto</h3><p>Descrição breve.</p><div class="price">R$ 99,00</div></div></article><article class="card"><div class="card-media"><img src="https://picsum.photos/id/110/800/600" alt="Produto"></div><div class="card-body"><h3>Produto</h3><p>Descrição breve.</p><div class="price">R$ 99,00</div></div></article><article class="card"><div class="card-media"><img src="https://picsum.photos/id/111/800/600" alt="Produto"></div><div class="card-body"><h3>Produto</h3><p>Descrição breve.</p><div class="price">R$ 99,00</div></div></article>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:24px">
+      <h2>Contato</h2>
+      <form id="contatoForm">
+        <div class="grid-2">
+          <label>Nome<input type="text" name="nome" required></label>
+          <label>Telefone<input type="tel" name="telefone" required></label>
+        </div>
+        <label>Descrição<input type="text" name="descricao" required></label>
+        <label>Mensagem<textarea name="mensagem" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copy">© 2025 CP2WEB</p>
+    </div>
+  </footer>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
